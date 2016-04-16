@@ -3,7 +3,8 @@
 	// for the documentation about the tasks.json format
 	"version": "0.1.0",
 	"command": "explorer.exe",
-	"isShellCommand": true,
+	"echoCommand": false,
+	"showOutput": "never",
 	"args": [
 		"${file}"
 	]
