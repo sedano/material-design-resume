@@ -1,5 +1,7 @@
 body {
     position: relative;
+    padding-top: 70px;
+    
 }
 
 body,
@@ -72,6 +74,14 @@ h6 {
 .material-icons.md-light.md-inactive {
     color: rgba(255, 255, 255, 0.3);
 }
+
+#projects >div> .panel.panel-info{
+    cursor:pointer;
+}
+.panel-body>.img-responsive{
+
+}
+
 /*
 .material-icons {
     margin-right: 0.2em;

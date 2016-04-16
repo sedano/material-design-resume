@@ -20,7 +20,7 @@
 
 <body data-spy="scroll" data-target=".navbar" data-offset="50">
 
-    <nav class="navbar navbar-default">
+    <nav class="navbar navbar-default navbar-fixed-top">
         <div class="container">
             <!-- Brand and toggle get grouped for better mobile display -->
             <div class="navbar-header">
@@ -39,6 +39,7 @@
                     <li><a href="#work-experience">Work Experience</a></li>
                     <li><a href="#education">Education</a></li>
                     <li><a href="#languages">Languages</a></li>
+                    <li><a href="#projects">Projects</a></li>
                 </ul>
 
                 <ul class="nav navbar-nav navbar-right">
@@ -76,9 +77,10 @@
             </div>
         </div>-->
         <!--Work Experience-->
-        <div class="row">
+
+        <div id="work-experience" class="row">
             <div class="col-md-12">
-                <h2 id="work-experience">Work Experience</h2>
+                <h2>Work Experience</h2>
             </div>
         </div>
         <!--Mars, Inc-->
@@ -182,10 +184,11 @@
                 </div>
             </div>
         </div>
+
         <!--Education-->
-        <div class="row">
+        <div id="education" class="row">
             <div class="col-md-12">
-                <h2 id="education">Education</h2>
+                <h2>Education</h2>
             </div>
         </div>
         <div class="row">
@@ -251,81 +254,128 @@
             </div>
         </div>
         <!--Languages-->
+        <div id="languages" class="row">
+            <div class="col-md-12">
+                <h2>Languages</h2>
+            </div>
+        </div>
         <div class="row">
             <div class="col-md-12">
-                <h2 id="languages">Languages</h2>
-            </div>
-            <!--Spanish-->
-            <div class="col-md-6">
-                <h3>Spanish</h3>
-                <div class="progress">
-                    <div class="progress-bar progress-bar" role="progressbar" aria-valuenow="100" aria-valuemin="0" aria-valuemax="100" style="width: 100%;">
-                        Native
-                    </div>
-                </div>
-            </div>
-            <!--Polish-->
-            <div class="col-md-6">
-                <h3>Polish</h3>
-                <div class="progress">
-                    <div class="progress-bar progress-bar-info" role="progressbar" aria-valuenow="60" aria-valuemin="0" aria-valuemax="100" style="width: 60%;">
-                        Working proficiency
-                    </div>
-                </div>
-            </div>
-            <!--English-->
-            <div class="col-md-6">
-                <h3>English</h3>
-                <div class="progress">
-                    <div class="progress-bar progress-bar-success" role="progressbar" aria-valuenow="95" aria-valuemin="0" aria-valuemax="100"
-                        style="width: 95%;">
-                        Full professional proficiency
-                    </div>
-                </div>
-            </div>
-            <!--German-->
-            <div class="col-md-6">
-                <h3>German</h3>
-                <div class="progress">
-                    <div class="progress-bar progress-bar-warning" role="progressbar" aria-valuenow="40" aria-valuemin="0" aria-valuemax="100"
-                        style="width: 40%;">
-                        Limited working proficiency
+                <div class="panel panel-default">
+                    <div class="panel-body">
+                        <!--Spanish-->
+                        <div class="col-md-6">
+                            <h3>Spanish</h3>
+                            <div class="progress">
+                                <div class="progress-bar progress-bar" role="progressbar" aria-valuenow="100" aria-valuemin="0" aria-valuemax="100" style="width: 100%;">
+                                    Native
+                                </div>
+                            </div>
+                        </div>
+                        <!--Polish-->
+                        <div class="col-md-6">
+                            <h3>Polish</h3>
+                            <div class="progress">
+                                <div class="progress-bar progress-bar-info" role="progressbar" aria-valuenow="60" aria-valuemin="0" aria-valuemax="100" style="width: 60%;">
+                                    Working proficiency
+                                </div>
+                            </div>
+                        </div>
+                        <!--English-->
+                        <div class="col-md-6">
+                            <h3>English</h3>
+                            <div class="progress">
+                                <div class="progress-bar progress-bar-success" role="progressbar" aria-valuenow="95" aria-valuemin="0" aria-valuemax="100"
+                                    style="width: 95%;">
+                                    Full professional proficiency
+                                </div>
+                            </div>
+                        </div>
+                        <!--German-->
+                        <div class="col-md-6">
+                            <h3>German</h3>
+                            <div class="progress">
+                                <div class="progress-bar progress-bar-warning" role="progressbar" aria-valuenow="40" aria-valuemin="0" aria-valuemax="100"
+                                    style="width: 40%;">
+                                    Limited working proficiency
+                                </div>
+                            </div>
+                        </div>
                     </div>
                 </div>
             </div>
         </div>
-        
+
         <!--Projects-->
-        <div class="row">
-            <div class="col-md-4">
-                <div class="panel">wdsd</div>
-            </div>
-            <div class="col-md-4">
-                <div class="panel">sdsdsd</div>
-            </div>
-            <div class="col-md-4">
-                <div class="panel">hghmgj</div>
+        <div id="projects" class="row">
+            <div class="col-md-12">
+                <h2>Projects</h2>
             </div>
         </div>
-        
-       
+        <div id="projects" class="row">
+            <div class="col-md-6">
+                <div class="panel panel-info" data-toggle="modal" data-target="#modal-project-1">
+                    <div class="panel-body">
+                        <img class="img-responsive" src="http://placehold.it/800x300" alt="Project Image">
+                    </div>
+                    <div class="panel-footer">Project number 1</div>
+                </div>
+            </div>
+            <div class="col-md-6">
+                <div class="panel panel-info">
+                    <div class="panel-body"></div>
+                    <div class="panel-footer"></div>
+                </div>
+            </div>
+            <div class="col-md-6">
+                <div class="panel panel-info">
+                    <div class="panel-body"></div>
+                    <div class="panel-footer"></div>
+                </div>
+            </div>
+            <div class="col-md-6">
+                <div class="panel panel-info">
+                    <div class="panel-body"></div>
+                    <div class="panel-footer"></div>
+                </div>
+            </div>
+        </div>
 
-
-
+        <!-- Modal Project 1-->
+        <div class="modal fade"" id="modal-project-1" tabindex="-1"" role="dialog"" aria-labelledby="modal-project-1">
+            <div class="modal-dialog"" role="document">
+                <div class="modal-content">
+                    <div class="modal-header">
+                        <button type="button"" class="close" data-dismiss="modal"" aria-label="Close"><span aria-hidden="true">&times;</span></button>
+                        <h4 class="modal-title"" id="modal-project-1">Project 1</h4>
+                    </div>
+                    <div class="modal-body">
+                        <img class="img-responsive" src="http://placehold.it/800x600" alt="Project Image">
+                        <p>Project number 1</p>
+                    </div>
+                </div>
+            </div>
+        </div>
 
 
     </div>
+
     <!--Le scripts-->
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.2.2/jquery.min.js"></script>
     <script src="js/bootstrap.min.js"></script>
-    <script src="js/material.min.js"></script>
     <script src="js/ripples.min.js"></script>
+    <script src="js/material.min.js"></script>
     <script>
-        $.material.init()
-        $('body').scrollspy({
-            target: '.navbar',
-            offset: 70
-        })
+        $(document).ready(function () {
+        $.material.init();
+        
+        $(".navbar ul li a[href^='#' ]").on('click', function(e) {
+            e.preventDefault();
+        $("body").scrollTop($(this.hash).offset().top - 70);
+        // - $('.navbar').height()
+        });
+        
+        });
     </script>
 </body>
 
