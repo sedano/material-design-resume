@@ -30,7 +30,7 @@
                     <span class="icon-bar"></span>
                     <span class="icon-bar"></span>
                 </button>
-                <a class="navbar-brand" href="#">Alejandro Sedano</a>
+                <a class="navbar-brand" href="#">Alejandro <span class="hidden-sm">Sánchez</span> Sedano</a>
             </div>
 
             <!-- Collect the nav links, forms, and other content for toggling -->
@@ -46,11 +46,13 @@
                     <li class="dropdown">
                         <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">Contact me <span class="caret"></span></a>
                         <ul class="dropdown-menu">
-                            <li><a href="mailto:sedano@outlook.com"><i class="material-icons md-18 md-dark">email</i>&nbsp;sedano@outlook.com</a></li>
-                            <li><a href="tel:+48510383877"><i class="material-icons md-18 md-dark">phone </i>&nbsp;+48 510 383 877</a></li>
-                            <li><a href="http://sedano.me"><i class="material-icons md-18 md-dark">link </i>&nbsp;http://sedano.me</a></li>
+                            <li>
+                                <a href="mailto:sedano@outlook.com?subject=Alejandro let's have an interview&body=You may be our perfect candidate!"><i class="material-icons md-18">email</i>&nbsp;sedano@outlook.com</a>
+                            </li>
+                            <li><a href="tel:+48510383877"><i class="material-icons md-18">phone </i>&nbsp;+48 510 383 877</a></li>
+                            <li><a href="http://sedano.me"><i class="material-icons md-18">link </i>&nbsp;http://sedano.me</a></li>
                             <li role="separator" class="divider"></li>
-                            <li><a href="#"><i class="material-icons md-18 md-dark">home</i> Warsaw, Poland</a></li>
+                            <li><a href="#"><i class="material-icons md-18">home</i> Warsaw, Poland</a></li>
                         </ul>
                     </li>
                 </ul>
@@ -76,8 +78,8 @@
                 </address>
             </div>
         </div>-->
-        <!--Work Experience-->
 
+        <!--Work Experience-->
         <div id="work-experience" class="row">
             <div class="col-md-12">
                 <h2>Work Experience</h2>
@@ -198,7 +200,7 @@
                     <div class="panel-heading">
                         <div class="row">
                             <div class="col-sm-8">
-                                <div>Politechnika Warszawska</div>
+                                Politechnika Warszawska
                             </div>
                             <div class="col-sm-4 text-sm-right">
                                 2012-2013
@@ -206,7 +208,7 @@
                         </div>
                     </div>
                     <div class="panel-body">
-                        <div>M.Sc. Automation and Robotics</div>
+                        M.Sc. Automation and Robotics
                     </div>
                     <div class="panel-footer">
                         European Master on Advanced Robotics
@@ -227,7 +229,7 @@
                         </div>
                     </div>
                     <div class="panel-body">
-                        <div>M.Sc. Robotics and Applied Informatics</div>
+                        M.Sc. Robotics and Applied Informatics
                     </div>
                     <div class="panel-footer">
                         European Master on Advanced Robotics
@@ -297,7 +299,7 @@
                             <div class="progress">
                                 <div class="progress-bar progress-bar-warning" role="progressbar" aria-valuenow="40" aria-valuemin="0" aria-valuemax="100"
                                     style="width: 40%;">
-                                    Limited working proficiency
+                                    <div class="text-nowrap">Limited working proficiency</div>
                                 </div>
                             </div>
                         </div>
@@ -312,7 +314,9 @@
                 <h2>Projects</h2>
             </div>
         </div>
+
         <div id="projects" class="row">
+            <!--Myorobotics-->
             <div class="col-md-6">
                 <div class="panel panel-info cursor-pointer" data-toggle="modal" data-target="#modal-project-1">
                     <div class="panel-body no-padding">
@@ -321,6 +325,7 @@
                     </div>
                 </div>
             </div>
+            <!--Seneka-->
             <div class="col-md-6">
                 <div class="panel panel-info cursor-pointer" data-toggle="modal" data-target="#modal-project-2">
                     <div class="panel-body no-padding">
@@ -329,14 +334,16 @@
                     </div>
                 </div>
             </div>
+            <!--VAL Parser-->
             <div class="col-md-6">
                 <div class="panel panel-info cursor-pointer" data-toggle="modal" data-target="#modal-project-3">
                     <div class="panel-body no-padding">
                         <img class="img-responsive" src="http://placehold.it/800x300" alt="Project Image">
-                        <h4 class="text-center">VAL Parser</h4>
+                        <h4 class="text-center">Robot Programming Editor</h4>
                     </div>
                 </div>
             </div>
+            <!--Robotic Hand-->
             <div class="col-md-6">
                 <div class="panel panel-info cursor-pointer" data-toggle="modal" data-target="#modal-project-4">
                     <div class="panel-body no-padding">
@@ -347,68 +354,111 @@
             </div>
         </div>
 
-        <!-- Modal Project 1-->
+        <!-- Modal Project Myorobotics-->
         <div class="modal fade" id="modal-project-1" tabindex="-1" role="dialog" aria-labelledby="modal-project-1">
             <div class="modal-dialog" role="document">
-            <div class="modal-content">
-                <div class="modal-header">
-                    <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
-                    <h4 class="modal-title" id="modal-project-1">Project 1</h4>
+                <div class="modal-content">
+                    <div class="modal-header">
+                        <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
+                        <h4 class="modal-title" id="modal-project-1">Myorobotics</h4>
                     </div>
                     <div class="modal-body">
                         <img class="img-responsive" src="http://placehold.it/800x600" alt="Project Image">
-                        <p>Project number 1</p>
+                        <hr>
+                        <p>The EU project <a href="http://myorobotics.eu">Myorobotics</a> has the objective of creating a toolkit
+                            of 3D printed parts for the creation of modular, affordable, robotic systems.</p>
+                        <p>Responsible for the development and design of support structures based on optimal biological principles.</p>
                     </div>
                 </div>
             </div>
         </div>
-        <!-- Modal Project 2-->
+        <!-- Modal Project Seneka-->
         <div class="modal fade" id="modal-project-2" tabindex="-1" role="dialog" aria-labelledby="modal-project-2">
             <div class="modal-dialog" role="document">
-            <div class="modal-content">
-                <div class="modal-header">
-                    <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
-                    <h4 class="modal-title" id="modal-project-2">Project 2</h4>
+                <div class="modal-content">
+                    <div class="modal-header">
+                        <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
+                        <h4 class="modal-title" id="modal-project-2">Seneka</h4>
                     </div>
                     <div class="modal-body">
                         <img class="img-responsive" src="http://placehold.it/800x600" alt="Project Image">
-                        <p>Project number 2</p>
+                        <hr>
+                        <p>The <a href="http://www.iis.fraunhofer.de/en/ff/sens/anw/sic/seneka.html">SENEKA</a> project idea
+                            aims to provide task forces and rescue teams with sensors and robots capable of forming dynamic
+                            networks for reconnaissance of the disaster area and the search for victims and sources of danger.</p>
+                        <p>Responsible of developing and manufacturing an actuated base for a LiDAR system.</p>
                     </div>
                 </div>
             </div>
         </div>
-        <!-- Modal Project 3-->
+        <!-- Modal Project VAL Parser-->
         <div class="modal fade" id="modal-project-3" tabindex="-1" role="dialog" aria-labelledby="modal-project-3">
             <div class="modal-dialog" role="document">
-            <div class="modal-content">
-                <div class="modal-header">
-                    <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
-                    <h4 class="modal-title" id="modal-project-3">Project 3</h4>
+                <div class="modal-content">
+                    <div class="modal-header">
+                        <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
+                        <h4 class="modal-title" id="modal-project-3">Robot Programming Editor</h4>
                     </div>
                     <div class="modal-body">
                         <img class="img-responsive" src="http://placehold.it/800x600" alt="Project Image">
-                        <p>Project number 3</p>
+                        <hr>
+                        <p>Design and implementation of user interface (UX) for a VAL robot programming parser.</p>
+                        <p>My main task was to develop a GUI focused on usability and user experience. The <a href="https://github.com/sedano/val-parser">software</a>                            is open source and currently used in robotic labs.</p>
                     </div>
                 </div>
             </div>
         </div>
-        <!-- Modal Project 4-->
+        <!-- Modal Project Robotic Hand-->
         <div class="modal fade" id="modal-project-4" tabindex="-1" role="dialog" aria-labelledby="modal-project-4">
             <div class="modal-dialog" role="document">
-            <div class="modal-content">
-                <div class="modal-header">
-                    <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
-                    <h4 class="modal-title" id="modal-project-4">Project 4</h4>
+                <div class="modal-content">
+                    <div class="modal-header">
+                        <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
+                        <h4 class="modal-title" id="modal-project-4">Robotic Hand Prostesis</h4>
                     </div>
                     <div class="modal-body">
-                        <img class="img-responsive" src="http://placehold.it/800x600" alt="Project Image">
-                        <p>Project number 4</p>
+                        <div class="embed-responsive embed-responsive-4by3">
+                            <iframe class="embed-responsive-item" src="https://www.youtube.com/embed/Nj3_dNwQnDs?rel=0&amp;showinfo=0" volume="0"></iframe>
+                        </div>
+                        <!--<img class="img-responsive padding-bottom" src="http://placehold.it/800x600" alt="Project Image">-->
+                        <hr>
+                        <p>Development of a low cost robotic hand controlled with myo-electric signals taken from the arm.</p>
+                        <p>Responsible for controls and programming.</p>
                     </div>
                 </div>
             </div>
         </div>
 
-
+        <!--Trainings and Certificates-->
+        <div id="certificates" class="row">
+            <div class="col-md-12">
+                <h2>Trainings & Certificates</h2>
+            </div>
+        </div>
+        
+        <!--div.row>(div.col-md-6.col-lg-4>div.panel.panel-info>div.panel-heading+div.panel-body)*3-->
+        <div class="row">
+            <div class="col-md-6 col-lg-4">
+                <div class="panel panel-success">
+                    <div class="panel-heading">Udacity</div>
+                    <div class="panel-body"></div>
+                </div>
+            </div>
+            <div class="col-md-6 col-lg-4">
+                <div class="panel panel-success">
+                    <div class="panel-heading">EDX</div>
+                    <div class="panel-body"></div>
+                </div>
+            </div>
+            <div class="col-md-6 col-lg-4">
+                <div class="panel panel-success">
+                    <div class="panel-heading">Others</div>
+                    <div class="panel-body"></div>
+                </div>
+            </div>
+        </div>
+        
+    <!--The End-->
     </div>
 
     <!--Le scripts-->
@@ -425,7 +475,6 @@
         $("body").scrollTop($(this.hash).offset().top - 70);
         // - $('.navbar').height()
         });
-        
         });
     </script>
 </body>

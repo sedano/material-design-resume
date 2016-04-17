@@ -33,7 +33,7 @@ h6 {
       width: 100%;
   }
 
-  .affix + .container-fluid {
+.affix + .container-fluid {
       padding-top: 70px;
   }
 
@@ -89,6 +89,9 @@ h6 {
     padding: 0;
 }
 
+.navbar .dropdown-menu li>a, .navbar.navbar-default .dropdown-menu li>a{
+    font-size: inherit;
+}
 /*
 .material-icons {
     margin-right: 0.2em;
