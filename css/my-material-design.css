@@ -1,3 +1,10 @@
+@media (min-width: 768px) {
+  .text-sm-left { text-align: left; }
+  .text-sm-right { text-align: right; }
+  .text-sm-center { text-align: center; }
+  .text-sm-justify { text-align: justify; }
+}
+
 body {
     position: relative;
     padding-top: 70px;
@@ -75,11 +82,11 @@ h6 {
     color: rgba(255, 255, 255, 0.3);
 }
 
-#projects >div> .panel.panel-info{
+.cursor-pointer{
     cursor:pointer;
 }
-.panel-body>.img-responsive{
-
+.no-padding{
+    padding: 0;
 }
 
 /*
