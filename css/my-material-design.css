@@ -8,6 +8,7 @@
 body {
     position: relative;
     padding-top: 70px;
+    -webkit-font-smoothing: antialiased;
     
 }
 
@@ -92,6 +93,18 @@ h6 {
 .navbar .dropdown-menu li>a, .navbar.navbar-default .dropdown-menu li>a{
     font-size: inherit;
 }
+
+.label.label-info{
+    text-decoration: none;
+    font-size: xx-small;
+}
+
+.panel:hover{
+ -webkit-box-shadow: 0 8px 17px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+          box-shadow: 0 8px 17px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+ 
+}
+
 /*
 .material-icons {
     margin-right: 0.2em;
