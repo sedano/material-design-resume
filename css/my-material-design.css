@@ -26,7 +26,7 @@ h6 {
 }
 
 .navbar, .navbar.navbar-default {
-    background-color: #1976D2;
+    background-color: #0288d1;
 }
 
 .affix {
@@ -103,6 +103,13 @@ h6 {
  -webkit-box-shadow: 0 8px 17px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
           box-shadow: 0 8px 17px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
  
+}
+
+.panel.panel-primary > .panel-heading {
+  background-color: #03A9F4;
+}
+.panel.panel-info > .panel-heading {
+  background-color: #448AFF;
 }
 
 /*
