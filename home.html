@@ -5,7 +5,7 @@
     <meta charset="utf-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="initial-scale=1, width=device-width" />
-    <meta name="theme-color" content="#0D47A1">
+    <meta name="theme-color" content="#0288d1">
     <title>Alejandro Sedano</title>
     <!--Material Design fonts-->
     <link rel="stylesheet" type="text/css" href="http://fonts.googleapis.com/css?family=Roboto:300,400,500,700">
@@ -37,7 +37,8 @@
                     <span class="icon-bar"></span>
                     <span class="icon-bar"></span>
                 </button>
-                <a class="navbar-brand" data-toggle="popover" data-trigger="focus" data-placement="bottom" data-image-url="image/jpg/my-photo.jpg" href="#">Alejandro <span class="hidden-sm">Sánchez Sedano</span></a>
+                <a class="navbar-brand" data-toggle="popover" data-trigger="focus" data-placement="bottom" data-image-url="image/jpg/my-photo.jpg"
+                    data-text href="#">Alejandro <span class="hidden-sm">Sánchez Sedano</span></a>
             </div>
 
             <!-- Collect the nav links, forms, and other content for toggling -->
@@ -48,6 +49,7 @@
                     <li><a href="#languages">Languages</a></li>
                     <li><a href="#projects">Projects</a></li>
                     <li><a href="#certificates">Certificates</a></li>
+                    <li><a href="#skills">Skills</a></li>
                 </ul>
 
                 <ul class="nav navbar-nav navbar-right">
@@ -55,7 +57,7 @@
                         <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">Contact me <span class="caret"></span></a>
                         <ul class="dropdown-menu">
                             <li>
-                                <a href="mailto:sedano@outlook.com?subject=Alejandro let's have an interview&body=You may be our perfect candidate!"><i class="material-icons md-18">email</i>&nbsp;sedano@outlook.com</a>
+                                <a href="mailto:sedano@outlook.com?subject=Alejandro%20let's%20have%20an%20interview&body=You%20may%20be%20our%20perfect%20candidate!"><i class="material-icons md-18">email</i>&nbsp;sedano@outlook.com</a>
                             </li>
                             <li><a href="tel:+48510383877"><i class="material-icons md-18">phone </i>&nbsp;+48 510 383 877</a></li>
                             <li><a href="http://sedano.me"><i class="material-icons md-18">link </i>&nbsp;http://sedano.me</a></li>
@@ -118,8 +120,9 @@
                             <li>Leading sustainability projects achieving significant energy and utilities savings.</li>
                         </ul>
                     </div>
-                    <div class="col-md-3">
+                    <div class="col-md-3 text-right">
                         <p data-toggle="tooltip" title="1 year 10 months">July 2014 - Present</p>
+                        <img class="img-logo pull-right" src="image/svg/Mars_Inc.svg" alt="Mars Logo">
                     </div>
 
                 </div>
@@ -150,8 +153,9 @@
                             <li>Mechanical design and manufacturing of elements for lightweight robotic systems.</li>
                         </ul>
                     </div>
-                    <div class="col-md-3" data-toggle="tooltip" title="10 months">
-                        <p>March 2013 - December 2013</p>
+                    <div class="col-md-3 text-right" >
+                        <p data-toggle="tooltip" title="10 months">March 2013 - December 2013</p>
+                        <img class="img-logo pull-right" src="image/svg/Fraunhofer-Gesellschaft_2009_logo.svg" alt="Fraunhofer Logo">
                         <!--<em class="hidden-xs hidden-sm">(10 months)</em>-->
                     </div>
 
@@ -185,8 +189,9 @@
                             <li>Creation of quality inspection sheets and internal procedures for production.</li>
                         </ul>
                     </div>
-                    <div class="col-md-3">
+                    <div class="col-md-3 text-right">
                         <p data-toggle="tooltip" title="2 years">September 2009 - August 2011</p>
+                        <img class="img-logo pull-right" src="image/png/tdi-sa-logo.png" alt="TDI Logo">
                         <!--<em class="hidden-xs hidden-sm">(2 years)</em>-->
                     </div>
 
@@ -322,7 +327,7 @@
             </div>
         </div>
 
-        <div id="projects" class="row">
+        <div class="row">
             <!--Myorobotics-->
             <div class="col-md-6">
                 <div class="panel panel-primary cursor-pointer" data-toggle="modal" data-target="#modal-project-1">
@@ -365,9 +370,9 @@
         <div class="modal fade" id="modal-project-1" tabindex="-1" role="dialog" aria-labelledby="modal-project-1">
             <div class="modal-dialog" role="document">
                 <div class="modal-content">
-                    <div class="modal-header">
+                    <div type="button" class="modal-header" data-dismiss="modal">
                         <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
-                        <h4 class="modal-title" id="modal-project-1">Myorobotics</h4>
+                        <h4 class="modal-title">Myorobotics</h4>
                     </div>
                     <div class="modal-body">
                         <img class="img-responsive" src="image/jpg/myorobotics-team-800x600.jpg" alt="Project Image">
@@ -383,9 +388,9 @@
         <div class="modal fade" id="modal-project-2" tabindex="-1" role="dialog" aria-labelledby="modal-project-2">
             <div class="modal-dialog" role="document">
                 <div class="modal-content">
-                    <div class="modal-header">
+                    <div type="button" class="modal-header" data-dismiss="modal">
                         <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
-                        <h4 class="modal-title" id="modal-project-2">Seneka</h4>
+                        <h4 class="modal-title">Seneka</h4>
                     </div>
                     <div class="modal-body">
                         <img class="img-responsive" src="image/jpg/seneka-sensor-800x600.jpg" alt="Project Image">
@@ -402,15 +407,15 @@
         <div class="modal fade" id="modal-project-3" tabindex="-1" role="dialog" aria-labelledby="modal-project-3">
             <div class="modal-dialog" role="document">
                 <div class="modal-content">
-                    <div class="modal-header">
+                    <div type="button" class="modal-header" data-dismiss="modal">
                         <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
-                        <h4 class="modal-title" id="modal-project-3">Robot Programming Editor</h4>
+                        <h4 class="modal-title">Robot Programming Editor</h4>
                     </div>
                     <div class="modal-body">
                         <img class="img-responsive" src="image/jpg/val-parser-GUI-800x600.jpg" alt="Project Image">
                         <hr>
                         <p>Design and implementation of user interface (UX) for a VAL robot programming parser.</p>
-                        <p>My main task was to develop a GUI focused on usability and user experience. The <a href="https://github.com/sedano/val-parser">software</a>                            is open source and currently used in robotic labs.</p>
+                        <p>My main task was to develop a GUI focused on usability and user experience. The <a href="https://github.com/sedano/val-parser">software</a> is open source and currently used in robotic labs.</p>
                     </div>
                 </div>
             </div>
@@ -419,13 +424,13 @@
         <div class="modal fade" id="modal-project-4" tabindex="-1" role="dialog" aria-labelledby="modal-project-4">
             <div class="modal-dialog" role="document">
                 <div class="modal-content">
-                    <div class="modal-header">
+                    <div type="button" class="modal-header" data-dismiss="modal">
                         <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
-                        <h4 class="modal-title" id="modal-project-4">Robotic Hand Prostesis</h4>
+                        <h4 class="modal-title">Robotic Hand Prostesis</h4>
                     </div>
                     <div class="modal-body">
                         <div class="embed-responsive embed-responsive-4by3">
-                            <iframe class="embed-responsive-item" src="https://www.youtube.com/embed/Nj3_dNwQnDs?rel=0&amp;showinfo=0" volume="0"></iframe>
+                            <iframe class="embed-responsive-item" src="https://www.youtube.com/embed/Nj3_dNwQnDs?rel=0&amp;showinfo=0"></iframe>
                         </div>
                         <!--<img class="img-responsive padding-bottom" src="http://placehold.it/800x600" alt="Project Image">-->
                         <hr>
@@ -449,16 +454,16 @@
                 <div class="panel panel-primary">
                     <div class="panel-heading">Udacity</div>
                     <div class="panel-body">
-                        <p>CS101 - Introduction to Computer Science
-                            <a href="files/CS101 Intro to CS.pdf" target="_blank"><span class="label label-info pull-right">Certificate</span></a>
+                        <p><span class="hidden-xs">CS101 - </span>Introduction to Computer Science
+                            <a href="files/CS101%20Intro%20to%20CS.pdf" target="_blank"><span class="label label-info pull-right label-xxsmall">Certificate</span></a>
                         </p>
-                        <p>CS255 - HTML5 Game Development
-                            <a href="files/CS255 HTML5 Game Development.pdf" target="_blank"><span class="label label-info pull-right">Certificate</span></a>
+                        <p><span class="hidden-xs">CS255 - </span>HTML5 Game Development
+                            <a href="files/CS255%20HTML5%20Game%20Development.pdf" target="_blank"><span class="label label-info pull-right label-xxsmall">Certificate</span></a>
                         </p>
-                        <p>CS291 - Interactive 3D Graphics
-                            <a href="files/CS291 Interactive 3D Graphics.pdf" target="_blank"><span class="label label-info pull-right">Certificate</span></a>
+                        <p><span class="hidden-xs">CS291 - </span>Interactive 3D Graphics
+                            <a href="files/CS291%20Interactive%203D%20Graphics.pdf" target="_blank"><span class="label label-info pull-right label-xxsmall">Certificate</span></a>
                         </p>
-                        <p>UD204 - Intro to HTML and CSS</p>
+                        <p><span class="hidden-xs">UD204 - </span>Intro to HTML and CSS</p>
                     </div>
                 </div>
             </div>
@@ -468,8 +473,8 @@
                         edX
                     </div>
                     <div class="panel-body">
-                        <p>6.00x - Intro to CS and Programming <a href="https://verify.edx.org/cert/8191429a2448483d8a829a79a806cd49"
-                                target="_blank"><span class="label label-info pull-right">Certificate</span></a></p>
+                        <p><span class="hidden-xs">6.00x - </span>Intro to CS and Programming <a href="https://verify.edx.org/cert/8191429a2448483d8a829a79a806cd49"
+                                target="_blank"><span class="label label-info pull-right label-xxsmall">Certificate</span></a></p>
 
                     </div>
                 </div>
@@ -498,8 +503,9 @@
         <div class="row">
             <div class="col-md-12">
                 <div class="panel-group" id="accordion" role="tablist" aria-multiselectable="true">
+                    <!--Software-->
                     <div class="panel panel-primary">
-                        <div class="panel-heading cursor-pointer" role="tab" id="headingOne" data-toggle="collapse" data-parent="#accordion" href="#collapseOne"
+                        <div class="panel-heading cursor-pointer" role="tab" id="headingOne" data-toggle="collapse" data-parent="#accordion" data-target="#collapseOne"
                             aria-expanded="true" aria-controls="collapseOne">
                             <div class="panel-title">
                                 Software
@@ -507,18 +513,26 @@
                         </div>
                         <div id="collapseOne" class="panel-collapse collapse in" role="tabpanel" aria-labelledby="headingOne">
                             <div class="panel-body">
-                                Anim pariatur cliche reprehenderit, enim eiusmod high life accusamus terry richardson ad squid. 3 wolf moon officia aute,
-                                non cupidatat skateboard dolor brunch. Food truck quinoa nesciunt laborum eiusmod. Brunch
-                                3 wolf moon tempor, sunt aliqua put a bird on it squid single-origin coffee nulla assumenda
-                                shoreditch et. Nihil anim keffiyeh helvetica, craft beer labore wes anderson cred nesciunt
-                                sapiente ea proident. Ad vegan excepteur butcher vice lomo. Leggings occaecat craft beer
-                                farm-to-table, raw denim aesthetic synth nesciunt you probably haven't heard of them accusamus
-                                labore sustainable VHS.
+                                <button type="button" class="btn btn-raised btn-primary">MS Office</button>
+                                <button type="button" class="btn btn-raised btn-primary">MS Project</button>
+                                <button type="button" class="btn btn-raised btn-info">Chrome Dev Tools</button>
+                                <button type="button" class="btn btn-raised btn-info">cPanel</button>
+                                <button type="button" class="btn btn-raised btn-info">FTP</button>
+                                <button type="button" class="btn btn-raised btn-info">Git</button>
+                                <button type="button" class="btn btn-raised btn-info">VS Code</button>
+                                <button type="button" class="btn btn-raised btn-success">GIMP</button>
+                                <button type="button" class="btn btn-raised btn-success">LaTeX</button>
+                                <button type="button" class="btn btn-raised btn-success">Linux</button>
+                                <button type="button" class="btn btn-raised btn-warning">CATOPO</button>
+                                <button type="button" class="btn btn-raised btn-warning">SolidWorks</button>
+                                <button type="button" class="btn btn-raised btn-warning">TopSolid 7</button>
+
                             </div>
                         </div>
                     </div>
+                    <!--Programming-->
                     <div class="panel panel-info">
-                        <div class="panel-heading cursor-pointer" role="tab" id="headingTwo" data-toggle="collapse" data-parent="#accordion" href="#collapseTwo"
+                        <div class="panel-heading cursor-pointer" role="tab" id="headingTwo" data-toggle="collapse" data-parent="#accordion" data-target="#collapseTwo"
                             aria-expanded="true" aria-controls="collapseTwo">
                             <div class="panel-title">
                                 Programming
@@ -526,32 +540,39 @@
                         </div>
                         <div id="collapseTwo" class="panel-collapse collapse" role="tabpanel" aria-labelledby="headingTwo">
                             <div class="panel-body">
-                                Anim pariatur cliche reprehenderit, enim eiusmod high life accusamus terry richardson ad squid. 3 wolf moon officia aute,
-                                non cupidatat skateboard dolor brunch. Food truck quinoa nesciunt laborum eiusmod. Brunch
-                                3 wolf moon tempor, sunt aliqua put a bird on it squid single-origin coffee nulla assumenda
-                                shoreditch et. Nihil anim keffiyeh helvetica, craft beer labore wes anderson cred nesciunt
-                                sapiente ea proident. Ad vegan excepteur butcher vice lomo. Leggings occaecat craft beer
-                                farm-to-table, raw denim aesthetic synth nesciunt you probably haven't heard of them accusamus
-                                labore sustainable VHS.
+                                <button type="button" class="btn btn-raised btn-info">HTML5</button>
+                                <button type="button" class="btn btn-raised btn-info">CSS</button>
+                                <button type="button" class="btn btn-raised btn-info">Python</button>
+                                <button type="button" class="btn btn-raised btn-info">Git</button>
+                                <button type="button" class="btn btn-raised btn-info">XML</button>
+                                <button type="button" class="btn btn-raised btn-info">JavaScript</button>
+                                <button type="button" class="btn btn-raised btn-info">three.js</button>
+                                <button type="button" class="btn btn-raised btn-info">Bootstrap</button>
+                                <button type="button" class="btn btn-raised btn-success">C</button>
+                                <button type="button" class="btn btn-raised btn-success">Visual Basic</button>
                             </div>
                         </div>
                     </div>
+                    <!--Other-->
                     <div class="panel panel-success">
-                        <div class="panel-heading cursor-pointer" role="tab" id="headingThree" data-toggle="collapse" data-parent="#accordion" href="#collapseThree"
+                        <div class="panel-heading cursor-pointer" role="tab" id="headingThree" data-toggle="collapse" data-parent="#accordion" data-target="#collapseThree"
                             aria-expanded="true" aria-controls="collapseThree">
                             <div class="panel-title">
-                                Personal
+                                Other
                             </div>
                         </div>
                         <div id="collapseThree" class="panel-collapse collapse" role="tabpanel" aria-labelledby="headingThree">
                             <div class="panel-body">
-                                Anim pariatur cliche reprehenderit, enim eiusmod high life accusamus terry richardson ad squid. 3 wolf moon officia aute,
-                                non cupidatat skateboard dolor brunch. Food truck quinoa nesciunt laborum eiusmod. Brunch
-                                3 wolf moon tempor, sunt aliqua put a bird on it squid single-origin coffee nulla assumenda
-                                shoreditch et. Nihil anim keffiyeh helvetica, craft beer labore wes anderson cred nesciunt
-                                sapiente ea proident. Ad vegan excepteur butcher vice lomo. Leggings occaecat craft beer
-                                farm-to-table, raw denim aesthetic synth nesciunt you probably haven't heard of them accusamus
-                                labore sustainable VHS.
+                                <button type="button" class="btn btn-raised btn-primary">Drive for results</button>
+                                <button type="button" class="btn btn-raised btn-primary">Presentation Skills</button>
+                                <button type="button" class="btn btn-raised btn-primary">Non-verbal communication</button>
+                                <button type="button" class="btn btn-raised btn-info">3D Printing</button>
+                                <button type="button" class="btn btn-raised btn-info">Robotics</button>
+                                <button type="button" class="btn btn-raised btn-info">Product Development</button>
+                                <button type="button" class="btn btn-raised btn-success">ISO 13485</button>
+                                <button type="button" class="btn btn-raised btn-success">Medical Devices</button>
+                                <button type="button" class="btn btn-raised btn-warning">Project Management</button>
+                                <button type="button" class="btn btn-raised btn-warning">Sustainability</button>
                             </div>
                         </div>
                     </div>
@@ -581,7 +602,7 @@
         $(".navbar-brand").popover({
             'html':true,
             'content':function(){
-                return "<img src='"+$(this).data('image-url')+"'>";
+                return "<img src='"+$(this).data('image-url')+"'><hr><p class='text-center'>Robotics Engineer<br>Technology Passionate</p>";
             }
         });
         
@@ -593,6 +614,15 @@
             });
         });
     </script>
+    <script>
+        (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+        (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+        m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+        })(window,document,'script','https://www.google-analytics.com/analytics.js','ga');
+
+        ga('create', 'UA-29193383-1', 'auto');
+        ga('send', 'pageview');
+</script>
 </body>
 
 </html>

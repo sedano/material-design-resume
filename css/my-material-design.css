@@ -1,8 +1,22 @@
 @media (min-width: 768px) {
-  .text-sm-left { text-align: left; }
-  .text-sm-right { text-align: right; }
-  .text-sm-center { text-align: center; }
-  .text-sm-justify { text-align: justify; }
+    .text-sm-left { text-align: left; }
+    .text-sm-right { text-align: right; }
+    .text-sm-center { text-align: center; }
+    .text-sm-justify { text-align: justify; }
+}
+
+@media(max-width: 768px){
+    *{visibility: visible !important;
+    -webkit-animation: none !important;
+    -moz-animation: none !important;
+    -o-animation: none !important;
+    -ms-animation: none !important;
+    animation: none !important;
+    -webkit-transition: none !important;
+    -moz-transition: none !important;
+    -o-transition: none !important;
+    -ms-transition: none !important;
+    transition: none !important;}
 }
 
 body {
@@ -27,6 +41,10 @@ h6 {
 
 .navbar, .navbar.navbar-default {
     background-color: #0288d1;
+}
+
+.navbar-fixed-bottom .navbar-collapse, .navbar-fixed-top .navbar-collapse {
+    max-height: 450px;
 }
 
 .affix {
@@ -94,7 +112,7 @@ h6 {
     font-size: inherit;
 }
 
-.label.label-info{
+.label.label-info.label-xxsmall{
     text-decoration: none;
     font-size: xx-small;
 }
@@ -113,6 +131,35 @@ h6 {
 }
 .panel.panel-info > .panel-heading {
   background-color: #448AFF;
+}
+.panel.panel-info > .panel-body {
+  display: inline-block;
+}
+
+.btn {
+    border-radius: 2px;
+    position: relative;
+    padding: 2px 10px;
+    margin: 3px 1px;
+    text-transform: none;
+    cursor: default;
+}
+
+.btn.btn-raised.btn-primary:hover,.btn.btn-raised.btn-info:hover, .btn.btn-raised.btn-danger:hover, .btn.btn-raised.btn-warning:hover, .btn.btn-raised.btn-success:hover{
+  -webkit-box-shadow: 0 4px 5px 0 rgba(0, 0, 0, 0.14), 0 1px 10px 0 rgba(0, 0, 0, 0.12), 0 2px 4px -1px rgba(0, 0, 0, 0.2);
+          box-shadow: 0 4px 5px 0 rgba(0, 0, 0, 0.14), 0 1px 10px 0 rgba(0, 0, 0, 0.12), 0 2px 4px -1px rgba(0, 0, 0, 0.2);
+    outline: 0;
+}
+
+.btn-group-raised .btn:not(.btn-link), .btn-group-raised .input-group-btn .btn:not(.btn-link), .btn.btn-raised:not(.btn-link), .input-group-btn .btn.btn-raised:not(.btn-link) {
+    -webkit-box-shadow: none;
+    box-shadow: none;
+}
+
+.img-logo{
+    max-height: 2em;
+    width: auto;
+    display: block;
 }
 
 /*
