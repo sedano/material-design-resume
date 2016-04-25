@@ -26,7 +26,6 @@
 </head>
 
 <body data-spy="scroll" data-target=".navbar" data-offset="70">
-
     <nav class="navbar navbar-default navbar-fixed-top">
         <div class="container">
             <!-- Brand and toggle get grouped for better mobile display -->
@@ -74,20 +73,26 @@
 
 
     <div class="container">
-        <!--Title-->
-        <!--<div class="row">
-            <div class="col-md-9">
-                <h1>Alejandro Sánchez Sedano</h1>
+        <!--About myself-->
+
+        <div class="panel" id="about-me">
+            <div class="panel-heading">
+
+                About Myself
+                <button type="button" class="close" data-dismiss="alert" data-target="#about-me" aria-label="Close">&times;</button>
+
             </div>
-            <div class="col-md-3">
-                <address>
-                    <i class="material-icons md-18 md-dark">home</i>Warsaw, Poland<br>
-                    <i class="material-icons md-18 md-dark">phone</i><a href="mailto:sedano@outlook.com">sedano@outlook.com</a><br>
-                    <i class="material-icons md-18 md-dark">email</i><a href="tel:+48510383877">+48 510 383 877</a><br>
-                    <i class="material-icons md-18 md-dark">link</i><a href="http://sedano.me">http://sedano.me</a>
-                </address>
+            <div class="panel-body">
+                <p>I'm a Robotics Engineer with experience in both technical and project management fields. I have worked for
+                    recognized Applied Robotics Research Institutes and lead Projects in Mars, Inc. I have global awareness
+                    by having lived and worked in 4 different countries in Europe and America. I'm passionate about technology
+                    and currently look for a position in software development.
+                </p>
+
             </div>
-        </div>-->
+        </div>
+
+
 
         <!--Work Experience-->
         <span class="nav-anchor" id="work-experience"></span>
@@ -154,7 +159,7 @@
                             <li>Mechanical design and manufacturing of elements for lightweight robotic systems.</li>
                         </ul>
                     </div>
-                    <div class="col-md-3 text-right" >
+                    <div class="col-md-3 text-right">
                         <p data-toggle="tooltip" title="10 months">March 2013 - December 2013</p>
                         <img class="img-logo pull-right" src="image/png/Fraunhofer-Gesellschaft_2009_logo.png" alt="Fraunhofer Logo">
                         <!--<em class="hidden-xs hidden-sm">(10 months)</em>-->
@@ -269,7 +274,7 @@
                 </div>
             </div>
         </div>
-        
+
         <!--Languages-->
         <span class="nav-anchor" id="languages"></span>
         <div class="row">
@@ -420,7 +425,7 @@
                         <img class="img-responsive" src="image/jpg/val-parser-GUI-800x600.jpg" alt="Project Image">
                         <hr>
                         <p>Design and implementation of user interface (UX) for a VAL robot programming parser.</p>
-                        <p>My main task was to develop a GUI focused on usability and user experience. The <a href="https://github.com/sedano/val-parser">software</a> is open source and currently used in robotic labs.</p>
+                        <p>My main task was to develop a GUI focused on usability and user experience. The <a href="https://github.com/sedano/val-parser">software</a>                            is open source and currently used in robotic labs.</p>
                     </div>
                 </div>
             </div>
@@ -512,8 +517,8 @@
                 <div class="panel-group" id="accordion" role="tablist" aria-multiselectable="true">
                     <!--Software-->
                     <div class="panel panel-primary">
-                        <div class="panel-heading cursor-pointer" role="tab" id="headingOne" data-toggle="collapse" data-parent="#accordion" data-target="#collapseOne"
-                            aria-expanded="true" aria-controls="collapseOne">
+                        <div class="panel-heading cursor-pointer" role="tab" data-toggle="collapse" id="headingOne" data-target="#collapseOne" aria-expanded="true"
+                            aria-controls="collapseOne">
                             <div class="panel-title">
                                 Software
                             </div>
@@ -539,13 +544,13 @@
                     </div>
                     <!--Programming-->
                     <div class="panel panel-info">
-                        <div class="panel-heading cursor-pointer" role="tab" id="headingTwo" data-toggle="collapse" data-parent="#accordion" data-target="#collapseTwo"
-                            aria-expanded="true" aria-controls="collapseTwo">
+                        <div class="panel-heading cursor-pointer" role="tab" data-toggle="collapse" id="headingTwo" data-target="#collapseTwo" aria-expanded="true"
+                            aria-controls="collapseTwo">
                             <div class="panel-title">
                                 Programming
                             </div>
                         </div>
-                        <div id="collapseTwo" class="panel-collapse collapse" role="tabpanel" aria-labelledby="headingTwo">
+                        <div id="collapseTwo" class="panel-collapse collapse in" role="tabpanel" aria-labelledby="headingTwo">
                             <div class="panel-body">
                                 <button type="button" class="btn btn-raised btn-info">HTML5</button>
                                 <button type="button" class="btn btn-raised btn-info">CSS</button>
@@ -562,13 +567,13 @@
                     </div>
                     <!--Other-->
                     <div class="panel panel-success">
-                        <div class="panel-heading cursor-pointer" role="tab" id="headingThree" data-toggle="collapse" data-parent="#accordion" data-target="#collapseThree"
+                        <div class="panel-heading cursor-pointer" role="tab" data-toggle="collapse" id="headingThree" data-target="#collapseThree"
                             aria-expanded="true" aria-controls="collapseThree">
                             <div class="panel-title">
                                 Other
                             </div>
                         </div>
-                        <div id="collapseThree" class="panel-collapse collapse" role="tabpanel" aria-labelledby="headingThree">
+                        <div id="collapseThree" class="panel-collapse collapse in" role="tabpanel" aria-labelledby="headingThree">
                             <div class="panel-body">
                                 <button type="button" class="btn btn-raised btn-primary">Drive for results</button>
                                 <button type="button" class="btn btn-raised btn-primary">Presentation Skills</button>
@@ -613,6 +618,7 @@
             }
         });
         
+        // Anchor fix when navbar fixed (obsolete)
         // $(document).ready(function () {              
         //     $(".navbar ul li a[href^='#' ]").on('click', function(e) {
         //         e.preventDefault();
@@ -629,7 +635,7 @@
 
         ga('create', 'UA-29193383-1', 'auto');
         ga('send', 'pageview');
-</script>
+    </script>
 </body>
 
 </html>
