@@ -162,6 +162,13 @@ h6 {
     display: block;
 }
 
+.nav-anchor{
+    display: block;
+    height: 70px; /*same height as header*/
+    margin-top: -70px; /*same height as header*/
+    visibility: hidden;
+}
+
 /*
 .material-icons {
     margin-right: 0.2em;

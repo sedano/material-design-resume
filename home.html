@@ -44,7 +44,7 @@
             <!-- Collect the nav links, forms, and other content for toggling -->
             <div class="collapse navbar-collapse" id="navbar-collapse">
                 <ul class="nav navbar-nav">
-                    <li><a href="#work-experience">Work Experience</a></li>
+                    <li><a href="#work-experience">Work<span class="hidden-sm"> Experience</span></a></li>
                     <li><a href="#education">Education</a></li>
                     <li><a href="#languages">Languages</a></li>
                     <li><a href="#projects">Projects</a></li>
@@ -57,7 +57,7 @@
                         <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">Contact me <span class="caret"></span></a>
                         <ul class="dropdown-menu">
                             <li>
-                                <a href="mailto:sedano@outlook.com?subject=Alejandro%20let's%20have%20an%20interview&body=You%20may%20be%20our%20perfect%20candidate!"><i class="material-icons md-18">email</i>&nbsp;sedano@outlook.com</a>
+                                <a href="mailto:alejandro@sedano.me?subject=Alejandro%20let's%20have%20an%20interview&body=You%20may%20be%20our%20perfect%20candidate!"><i class="material-icons md-18">email</i>&nbsp;alejandro@sedano.me</a>
                             </li>
                             <li><a href="tel:+48510383877"><i class="material-icons md-18">phone </i>&nbsp;+48 510 383 877</a></li>
                             <li><a href="http://sedano.me"><i class="material-icons md-18">link </i>&nbsp;http://sedano.me</a></li>
@@ -90,7 +90,8 @@
         </div>-->
 
         <!--Work Experience-->
-        <div id="work-experience" class="row">
+        <span class="nav-anchor" id="work-experience"></span>
+        <div class="row">
             <div class="col-md-12">
                 <h2>Work Experience</h2>
             </div>
@@ -122,7 +123,7 @@
                     </div>
                     <div class="col-md-3 text-right">
                         <p data-toggle="tooltip" title="1 year 10 months">July 2014 - Present</p>
-                        <img class="img-logo pull-right" src="image/svg/Mars_Inc.svg" alt="Mars Logo">
+                        <img class="img-logo pull-right" src="image/png/Mars_Inc.png" alt="Mars Logo">
                     </div>
 
                 </div>
@@ -155,7 +156,7 @@
                     </div>
                     <div class="col-md-3 text-right" >
                         <p data-toggle="tooltip" title="10 months">March 2013 - December 2013</p>
-                        <img class="img-logo pull-right" src="image/svg/Fraunhofer-Gesellschaft_2009_logo.svg" alt="Fraunhofer Logo">
+                        <img class="img-logo pull-right" src="image/png/Fraunhofer-Gesellschaft_2009_logo.png" alt="Fraunhofer Logo">
                         <!--<em class="hidden-xs hidden-sm">(10 months)</em>-->
                     </div>
 
@@ -200,7 +201,8 @@
         </div>
 
         <!--Education-->
-        <div id="education" class="row">
+        <span class="nav-anchor" id="education"></span>
+        <div class="row">
             <div class="col-md-12">
                 <h2>Education</h2>
             </div>
@@ -267,8 +269,10 @@
                 </div>
             </div>
         </div>
+        
         <!--Languages-->
-        <div id="languages" class="row">
+        <span class="nav-anchor" id="languages"></span>
+        <div class="row">
             <div class="col-md-12">
                 <h2>Languages</h2>
             </div>
@@ -321,7 +325,8 @@
         </div>
 
         <!--Projects-->
-        <div id="projects" class="row">
+        <span class="nav-anchor" id="projects"></span>
+        <div class="row">
             <div class="col-md-12">
                 <h2>Projects</h2>
             </div>
@@ -442,7 +447,8 @@
         </div>
 
         <!--Trainings and Certificates-->
-        <div id="certificates" class="row">
+        <span class="nav-anchor" id="certificates"></span>
+        <div class="row">
             <div class="col-md-12">
                 <h2>Trainings & Certificates</h2>
             </div>
@@ -493,7 +499,8 @@
         </div>
 
         <!--Skills-->
-        <div id="Skills" class="row">
+        <span class="nav-anchor" id="skills"></span>
+        <div class="row">
             <div class="col-md-12">
                 <h2>Skills</h2>
             </div>
@@ -606,13 +613,13 @@
             }
         });
         
-        $(document).ready(function () {              
-            $(".navbar ul li a[href^='#' ]").on('click', function(e) {
-                e.preventDefault();
-            $("body").scrollTop($(this.hash).offset().top - 70);
-            // - $('.navbar').height()
-            });
-        });
+        // $(document).ready(function () {              
+        //     $(".navbar ul li a[href^='#' ]").on('click', function(e) {
+        //         e.preventDefault();
+        //     $("body").scrollTop($(this.hash).offset().top - 70);
+        //     // - $('.navbar').height()
+        //     });
+        // });
     </script>
     <script>
         (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
