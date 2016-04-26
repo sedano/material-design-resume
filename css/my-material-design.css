@@ -169,6 +169,10 @@ h6 {
     visibility: hidden;
 }
 
+.panel.panel-about>.panel-heading {
+    background-color: slategrey;
+}
+
 /*
 .material-icons {
     margin-right: 0.2em;
