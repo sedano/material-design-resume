@@ -173,6 +173,28 @@ h6 {
     background-color: slategrey;
 }
 
+a, a:focus, a:hover {
+    color: #448AFF;
+}
+
+.navbar .dropdown-menu li>a:focus, .navbar .dropdown-menu li>a:hover, .navbar.navbar-default .dropdown-menu li>a:focus, .navbar.navbar-default .dropdown-menu li>a:hover {
+    color: #448AFF;
+    background-color: #eee;
+}
+
+.navbar .dropdown-menu .active>a, .navbar.navbar-default .dropdown-menu .active>a {
+    background-color: inherit;
+    color: #333;
+}
+
+.dropdown-menu>.active>a, .dropdown-menu>.active>a:focus, .dropdown-menu>.active>a:hover {
+    color: inherit;
+}
+
+.navbar .dropdown-menu .active > a:focus, .navbar .dropdown-menu .active > a:hover, .navbar.navbar-default .dropdown-menu .active > a:focus, .navbar.navbar-default .dropdown-menu .active > a:hover {
+    color: #333;
+}
+
 /*
 .material-icons {
     margin-right: 0.2em;
