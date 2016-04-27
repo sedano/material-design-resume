@@ -51,10 +51,11 @@
                 <ul class="nav navbar-nav">
                     <li><a href="#work-experience">Work<span class="hidden-sm"> Experience</span></a></li>
                     <li><a href="#education">Education</a></li>
-                    <li><a href="#languages">Languages</a></li>
-                    <li><a href="#projects">Projects</a></li>
+                    <li><a href="#languages" class="hidden-xs">Languages</a></li>
+                    <li><a href="#portfolio">Portfolio</a></li>
                     <li><a href="#certificates">Certificates</a></li>
                     <li><a href="#skills">Skills</a></li>
+                    <li><a href="#hobbies" class="hidden-sm hidden-md">Hobbies</a></li>
                 </ul>
 
                 <ul class="nav navbar-nav navbar-right">
@@ -62,8 +63,8 @@
                         <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">Contact me <span class="caret"></span></a>
                         <ul class="dropdown-menu">
                             <li><a href="#" data-toggle="collapse" data-target="#about-me"><i class="material-icons md-18">account_circle</i> About me</a></li>
-                            <li><a href="#"><i class="material-icons md-18">home</i> Warsaw, Poland</a></li>
-                            <li role="separator" class="divider"></li>
+                            <li><a href="#" class="hidden-xs"><i class="material-icons md-18">home</i> Warsaw, Poland</a></li>
+                            <li role="separator" class="divider hidden-xs"></li>
                             <li>
                                 <a href="mailto:alejandro@sedano.me?subject=Alejandro%20let's%20have%20an%20interview&body=You%20may%20be%20our%20perfect%20candidate!"><i class="material-icons md-18">email</i>&nbsp;alejandro@sedano.me</a>
                             </li>
@@ -81,7 +82,7 @@
         <div class="row">
             <div class="col-md-12">
                 <div class="panel panel-about panel-collapse in" id="about-me">
-                    <div class="panel-heading cursor-pointer" type="button" data-toggle="collapse" data-target="#about-me">
+                    <div class="panel-heading cursor-pointer" role="button" data-toggle="collapse" data-target="#about-me">
                         <strong>About Myself</strong>
                         <button class="close" aria-label="Close">&times;</button>
                     </div>
@@ -347,20 +348,29 @@
             </div>
         </div>
 
-        <!--Projects-->
-        <span class="nav-anchor" id="projects"></span>
+        <!--Portfolio-->
+        <span class="nav-anchor" id="portfolio"></span>
         <div class="row">
             <div class="col-md-12">
-                <h2>Projects</h2>
+                <h2>Porfolio</h2>
             </div>
         </div>
 
         <div class="row">
+            <!--Vivero el Jardín-->
+            <div class="col-md-12">
+                <div class="panel panel-primary cursor-pointer" data-toggle="modal" data-target="#modal-project-0">
+                    <div class="panel-body no-padding">
+                        <img class="img-responsive" src="image/jpg/capture-vivero-dev.jpg" alt="Website image" height="500">
+                        <h4 class="text-center">Vivero el Jardín</h4>
+                    </div>
+                </div>
+            </div>
             <!--Myorobotics-->
             <div class="col-md-6">
                 <div class="panel panel-primary cursor-pointer" data-toggle="modal" data-target="#modal-project-1">
                     <div class="panel-body no-padding">
-                        <img class="img-responsive" src="image/jpg/myorobotics-arm-800x300.jpg" alt="Project Image">
+                        <img class="img-responsive" src="image/jpg/myorobotics-arm-800x300.jpg" alt="Robot module image">
                         <h4 class="text-center">Myorobotics</h4>
                     </div>
                 </div>
@@ -369,7 +379,7 @@
             <div class="col-md-6">
                 <div class="panel panel-primary cursor-pointer" data-toggle="modal" data-target="#modal-project-2">
                     <div class="panel-body no-padding">
-                        <img class="img-responsive" src="image/jpg/seneka-beam-800x300.jpg" alt="Project Image">
+                        <img class="img-responsive" src="image/jpg/seneka-beam-800x300.jpg" alt="Drawing image">
                         <h4 class="text-center">Seneka</h4>
                     </div>
                 </div>
@@ -378,7 +388,7 @@
             <div class="col-md-6">
                 <div class="panel panel-primary cursor-pointer" data-toggle="modal" data-target="#modal-project-3">
                     <div class="panel-body no-padding">
-                        <img class="img-responsive" src="image/jpg/val-parser-IDE-800x300e.jpg" alt="Project Image">
+                        <img class="img-responsive" src="image/jpg/val-parser-IDE-800x300e.jpg" alt="Software image">
                         <h4 class="text-center">Robot Programming Editor</h4>
                     </div>
                 </div>
@@ -387,8 +397,29 @@
             <div class="col-md-6">
                 <div class="panel panel-primary cursor-pointer" data-toggle="modal" data-target="#modal-project-4">
                     <div class="panel-body no-padding">
-                        <img class="img-responsive" src="image/jpg/robo-hand-800x300.jpg" alt="Project Image">
+                        <img class="img-responsive" src="image/jpg/robo-hand-800x300.jpg" alt="Robotic hand image">
                         <h4 class="text-center">Robotic Hand</h4>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!-- Modal Project Vivero el Jardin-->
+        <div class="modal fade" id="modal-project-0" tabindex="-1" role="dialog" aria-labelledby="modal-project-0">
+            <div class="modal-dialog" role="document">
+                <div class="modal-content">
+                    <div role="button" class="modal-header" data-dismiss="modal">
+                        <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
+                        <h4 class="modal-title">Vivero el Jardin</h4>
+                    </div>
+                    <div class="modal-body">
+                        <img class="img-responsive" src="image/png/capture-vivero-home.png" alt="Project Image">
+                        <hr>
+                        <p><a href="http://viveroeljardin.mx">Vivero el Jardín</a> is my own e-commerce start-up in partership
+                            with the owners of a plant nursery. The start-up is pioneer in Mexico for selling plants in the
+                            state of Jalisco. The website is Based on the OpenCart platform.</p>
+                        <p>The company theme, colors, logos, photography, image retouching, custom CSS theme, hosting, analytics,
+                            ftp and e-mail configuration, invoice platform and custom PHP code was made by me.</p>
                     </div>
                 </div>
             </div>
@@ -398,7 +429,7 @@
         <div class="modal fade" id="modal-project-1" tabindex="-1" role="dialog" aria-labelledby="modal-project-1">
             <div class="modal-dialog" role="document">
                 <div class="modal-content">
-                    <div type="button" class="modal-header" data-dismiss="modal">
+                    <div role="button" class="modal-header" data-dismiss="modal">
                         <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
                         <h4 class="modal-title">Myorobotics</h4>
                     </div>
@@ -416,7 +447,7 @@
         <div class="modal fade" id="modal-project-2" tabindex="-1" role="dialog" aria-labelledby="modal-project-2">
             <div class="modal-dialog" role="document">
                 <div class="modal-content">
-                    <div type="button" class="modal-header" data-dismiss="modal">
+                    <div role="button" class="modal-header" data-dismiss="modal">
                         <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
                         <h4 class="modal-title">Seneka</h4>
                     </div>
@@ -435,7 +466,7 @@
         <div class="modal fade" id="modal-project-3" tabindex="-1" role="dialog" aria-labelledby="modal-project-3">
             <div class="modal-dialog" role="document">
                 <div class="modal-content">
-                    <div type="button" class="modal-header" data-dismiss="modal">
+                    <div role="button" class="modal-header" data-dismiss="modal">
                         <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
                         <h4 class="modal-title">Robot Programming Editor</h4>
                     </div>
@@ -455,7 +486,7 @@
         <div class="modal fade" id="modal-project-4" tabindex="-1" role="dialog" aria-labelledby="modal-project-4">
             <div class="modal-dialog" role="document">
                 <div class="modal-content">
-                    <div type="button" class="modal-header" data-dismiss="modal">
+                    <div role="button" class="modal-header" data-dismiss="modal">
                         <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
                         <h4 class="modal-title">Robotic Hand Prostesis</h4>
                     </div>
@@ -486,7 +517,7 @@
                 <div class="panel panel-primary">
                     <div class="panel-heading">Udacity</div>
                     <div class="panel-body">
-                        <p><span class="hidden-xs">CS101 - </span>Introduction to Computer Science
+                        <p><span class="hidden-xs">CS101 - </span>Intro to Computer Science
                             <a href="files/CS101%20Intro%20to%20CS.pdf" target="_blank"><span class="label label-info pull-right label-xxsmall">Certificate</span></a>
                         </p>
                         <p><span class="hidden-xs">CS255 - </span>HTML5 Game Development
@@ -533,7 +564,7 @@
 
         <div class="row">
             <div class="col-md-12">
-                <div class="panel-group">
+                <div class="panel-group" role="tablist">
                     <!--Software-->
                     <div class="panel panel-primary">
                         <div class="panel-heading cursor-pointer" role="tab" data-toggle="collapse" id="headingOne" data-target="#collapseOne" aria-expanded="true"
@@ -624,7 +655,6 @@
                                     <div class="caption text-center">
                                         Traveling
                                     </div>
-                                    </a>
                                 </div>
                             </div>
                             <div class="col-xs-4">
@@ -633,7 +663,6 @@
                                     <div class="caption text-center">
                                         Videogames
                                     </div>
-                                    </a>
                                 </div>
                             </div>
                             <div class="col-xs-4">
@@ -642,7 +671,6 @@
                                     <div class="caption text-center">
                                         IoT
                                     </div>
-                                    </a>
                                 </div>
                             </div>
                         </div>
@@ -656,9 +684,9 @@
         <!--Personal data processing consent-->
         <div class="row">
             <div class="col-md-8 col-md-offset-2 text-center md-dark">
-                <small><p>I hereby give consent for my personal data included in my application to be processed for the purposes of the recruitment
+                <p><small>I hereby give consent for my personal data included in my application to be processed for the purposes of the recruitment
             process under the Personal Data Protection Act as of 29 August 1997, consolidated text: Journal of Laws 2002,
-            item 1182 as amended.</p></small>
+            item 1182 as amended.</small></p>
             </div>
         </div>
 
@@ -676,6 +704,11 @@
             $.material.init();
             $('[data-toggle="popover"]').popover();
             $('[data-toggle="tooltip"]').tooltip();
+            $(document).on('click','.navbar-collapse.in',function(e) {
+                if( $(e.target).is('a') && $(e.target).attr('class') != 'dropdown-toggle' ) {
+                $(this).collapse('hide');
+                }
+            });
             
         });
         
