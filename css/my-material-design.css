@@ -238,3 +238,12 @@ a, a:focus, a:hover {
     top: 4px;
 }*/
 
+@media print {
+  @page {
+    size: 330mm 427mm;
+    margin: 14mm;
+  }
+  .container {
+    width: 1170px;
+  }
+}
