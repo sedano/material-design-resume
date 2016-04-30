@@ -17,6 +17,16 @@
     -o-transition: none !important;
     -ms-transition: none !important;
     transition: none !important;}
+    
+    .btn.btn-info.btn-fab, .btn-fab{
+    opacity: 0.4;
+    bottom: 5px !important;
+    right: 5px  !important;
+    height: 35px !important;
+    min-width: 35px !important;
+    width: 35px !important;
+    
+}
 }
 
 
@@ -246,4 +256,16 @@ a, a:focus, a:hover {
   .container {
     width: 1170px;
   }
+}
+
+.btn.btn-info.btn-fab, .btn-fab{
+    background-color: #0288d1;
+    position: fixed;
+    bottom: 20px;
+    right: 10px;
+    z-index: 1030;
+    height: 50px;
+    min-width: 50px;
+    width: 50px;
+    
 }
