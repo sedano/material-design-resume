@@ -22,11 +22,10 @@
     opacity: 0.4;
     bottom: 5px !important;
     right: 5px  !important;
-    height: 35px !important;
-    min-width: 35px !important;
-    width: 35px !important;
-    
-}
+    height: 40px !important;
+    min-width: 40px !important;
+    width: 40px !important;
+    }
 }
 
 
@@ -258,7 +257,7 @@ a, a:focus, a:hover {
   }
 }
 
-.btn.btn-info.btn-fab, .btn-fab{
+.btn.btn-info.btn-fab, .btn.btn-info.btn-fab:focus:not(:hover){
     background-color: #0288d1;
     position: fixed;
     bottom: 20px;
@@ -267,5 +266,5 @@ a, a:focus, a:hover {
     height: 50px;
     min-width: 50px;
     width: 50px;
-    
+    cursor:pointer;
 }
