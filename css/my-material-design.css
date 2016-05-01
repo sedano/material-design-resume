@@ -1,81 +1,94 @@
 @media (min-width: 768px) {
-    .text-sm-left { text-align: left; }
-    .text-sm-right { text-align: right; }
-    .text-sm-center { text-align: center; }
-    .text-sm-justify { text-align: justify; }
-}
+    .text-sm-left {
+        text-align: left;
+    }
 
-@media(max-width: 768px){
-    *{visibility: visible !important;
-    -webkit-animation: none !important;
-    -moz-animation: none !important;
-    -o-animation: none !important;
-    -ms-animation: none !important;
-    animation: none !important;
-    -webkit-transition: none !important;
-    -moz-transition: none !important;
-    -o-transition: none !important;
-    -ms-transition: none !important;
-    transition: none !important;}
-    
-    .btn.btn-info.btn-fab, .btn-fab{
-    opacity: 0.4;
-    bottom: 5px !important;
-    right: 5px  !important;
-    height: 40px !important;
-    min-width: 40px !important;
-    width: 40px !important;
+    .text-sm-right {
+        text-align: right;
+    }
+
+    .text-sm-center {
+        text-align: center;
+    }
+
+    .text-sm-justify {
+        text-align: justify;
     }
 }
 
+@media(max-width: 768px) {
+    * {
+        visibility: visible !important;
+        -webkit-animation: none !important;
+        -moz-animation: none !important;
+        -o-animation: none !important;
+        -ms-animation: none !important;
+        animation: none !important;
+        -webkit-transition: none !important;
+        -moz-transition: none !important;
+        -o-transition: none !important;
+        -ms-transition: none !important;
+        transition: none !important;
+    }
 
+    .btn.btn-info.btn-fab,.btn-fab {
+        opacity: .4;
+        bottom: 5px !important;
+        right: 5px !important;
+        height: 40px !important;
+        min-width: 40px !important;
+        width: 40px !important;
+    }
+}
+
+@media print {
+    div,.row,.container {
+        display: none !important;
+    }
+
+    body::after {
+        content: "Think about the planet! \A If you need to print my information please download my CV in PDF here-> cv.sedano.me \A Thank you :)";
+        white-space: pre;
+    }
+}
 
 body {
     position: relative;
     -webkit-font-smoothing: antialiased;
     padding-top: 70px;
-    
-    /*Black and white filter
+/*Black and white filter
     /* IE */
-    /*filter: progid:DXImageTransform.Microsoft.BasicImage(grayscale=1);*/
-
-    /* Chrome, Safari */
-    /*-webkit-filter: grayscale(1);*/
-
-    /* Firefox */
-    /*filter: grayscale(1);*/
-    
+/*filter: progid:DXImageTransform.Microsoft.BasicImage(grayscale=1);*/
+/* Chrome, Safari */
+/*-webkit-filter: grayscale(1);*/
+/* Firefox */
+/*filter: grayscale(1);*/
 }
 
-body,
-h1,
-h2,
-h3,
-h4 {
+body,h1,h2,h3,h4 {
     font-weight: 400;
 }
 
-h5,
-h6 {
+h5,h6 {
     font-weight: 500;
 }
 
-.navbar, .navbar.navbar-default {
+.navbar,.navbar.navbar-default {
     background-color: #0288d1;
 }
 
-.navbar-fixed-bottom .navbar-collapse, .navbar-fixed-top .navbar-collapse {
+.navbar-fixed-bottom .navbar-collapse,.navbar-fixed-top .navbar-collapse {
     max-height: 500px;
 }
 
 .affix {
-      top: 0;
-      width: 100%;
-  }
+    top: 0;
+    width: 100%;
+}
 
 .affix + .container-fluid {
-      padding-top: 70px;
-  }
+    padding-top: 70px;
+}
 
 .panel-heading {
     font-size: 1.17em;
@@ -106,58 +119,60 @@ h6 {
     font-size: 48px;
 }
 
-.material-icons.md-dark, .md-dark {
-    color: rgba(0, 0, 0, 0.54);
+.material-icons.md-dark,.md-dark {
+    color: rgba(0,0,0,0.54);
 }
 
-
 .material-icons.md-dark.md-inactive {
-    color: rgba(0, 0, 0, 0.26);
+    color: rgba(0,0,0,0.26);
 }
 
 .material-icons.md-light {
-    color: rgba(255, 255, 255, 1);
+    color: rgba(255,255,255,1);
 }
 
 .material-icons.md-light.md-inactive {
-    color: rgba(255, 255, 255, 0.3);
+    color: rgba(255,255,255,0.3);
 }
 
-.cursor-pointer{
-    cursor:pointer;
+.cursor-pointer {
+    cursor: pointer;
 }
-.no-padding{
+
+.no-padding {
     padding: 0;
 }
 
-.navbar .dropdown-menu li>a, .navbar.navbar-default .dropdown-menu li>a{
+.navbar .dropdown-menu li>a,.navbar.navbar-default .dropdown-menu li>a {
     font-size: inherit;
 }
 
-.label.label-info.label-xxsmall{
+.label.label-info.label-xxsmall {
     text-decoration: none;
     font-size: xx-small;
 }
 
-.panel:hover{
- -webkit-box-shadow: 0 8px 17px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
-          box-shadow: 0 8px 17px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
- }
- .nav.navbar-nav li:hover{
+.panel:hover {
+    -webkit-box-shadow: 0 8px 17px 0 rgba(0,0,0,0.2),0 6px 20px 0 rgba(0,0,0,0.19);
+    box-shadow: 0 8px 17px 0 rgba(0,0,0,0.2),0 6px 20px 0 rgba(0,0,0,0.19);
+}
+
+.nav.navbar-nav li:hover {
     color: inherit;
     background-color: rgba(255,255,255,.05);
- }
+}
 
 .panel.panel-primary > .panel-heading {
-  background-color: #03A9F4;
+    background-color: #03A9F4;
 }
+
 .panel.panel-info > .panel-heading {
-  background-color: #448AFF;
+    background-color: #448AFF;
 }
+
 /*.panel.panel-info > .panel-body {
   display: inline-block;
 }*/
-
 .btn {
     border-radius: 2px;
     position: relative;
@@ -165,30 +180,32 @@ h6 {
     margin: 3px 1px;
     text-transform: none;
     cursor: default;
-    font-size: 0.75em;
+    font-size: .75em;
 }
 
-.btn.btn-raised.btn-primary:hover,.btn.btn-raised.btn-info:hover, .btn.btn-raised.btn-danger:hover, .btn.btn-raised.btn-warning:hover, .btn.btn-raised.btn-success:hover{
-  -webkit-box-shadow: 0 4px 5px 0 rgba(0, 0, 0, 0.14), 0 1px 10px 0 rgba(0, 0, 0, 0.12), 0 2px 4px -1px rgba(0, 0, 0, 0.2);
-          box-shadow: 0 4px 5px 0 rgba(0, 0, 0, 0.14), 0 1px 10px 0 rgba(0, 0, 0, 0.12), 0 2px 4px -1px rgba(0, 0, 0, 0.2);
+.btn.btn-raised.btn-primary:hover,.btn.btn-raised.btn-info:hover,.btn.btn-raised.btn-danger:hover,.btn.btn-raised.btn-warning:hover,.btn.btn-raised.btn-success:hover {
+    -webkit-box-shadow: 0 4px 5px 0 rgba(0,0,0,0.14),0 1px 10px 0 rgba(0,0,0,0.12),0 2px 4px -1px rgba(0,0,0,0.2);
+    box-shadow: 0 4px 5px 0 rgba(0,0,0,0.14),0 1px 10px 0 rgba(0,0,0,0.12),0 2px 4px -1px rgba(0,0,0,0.2);
     outline: 0;
 }
 
-.btn-group-raised .btn:not(.btn-link), .btn-group-raised .input-group-btn .btn:not(.btn-link), .btn.btn-raised:not(.btn-link), .input-group-btn .btn.btn-raised:not(.btn-link) {
+.btn-group-raised .btn:not(.btn-link),.btn-group-raised .input-group-btn .btn:not(.btn-link),.btn.btn-raised:not(.btn-link),.input-group-btn .btn.btn-raised:not(.btn-link) {
     -webkit-box-shadow: none;
     box-shadow: none;
 }
 
-.img-logo{
+.img-logo {
     max-height: 2em;
     width: auto;
     display: block;
 }
 
-.nav-anchor{
+.nav-anchor {
     display: block;
-    height: 70px; /*same height as header*/
-    margin-top: -70px; /*same height as header*/
+    height: 70px;
+/*same height as header*/
+    margin-top: -70px;
+/*same height as header*/
     visibility: hidden;
 }
 
@@ -196,45 +213,46 @@ h6 {
     background-color: slategrey;
 }
 
-a, a:focus, a:hover {
+a,a:focus,a:hover {
     color: #448AFF;
 }
 
-.navbar .dropdown-menu li>a:focus, .navbar .dropdown-menu li>a:hover, .navbar.navbar-default .dropdown-menu li>a:focus, .navbar.navbar-default .dropdown-menu li>a:hover {
+.navbar .dropdown-menu li>a:focus,.navbar .dropdown-menu li>a:hover,.navbar.navbar-default .dropdown-menu li>a:focus,.navbar.navbar-default .dropdown-menu li>a:hover {
     color: #448AFF;
     background-color: #eee;
 }
 
-.navbar .dropdown-menu .active>a, .navbar.navbar-default .dropdown-menu .active>a {
+.navbar .dropdown-menu .active>a,.navbar.navbar-default .dropdown-menu .active>a {
     background-color: inherit;
     color: #333;
 }
 
-.dropdown-menu>.active>a, .dropdown-menu>.active>a:focus, .dropdown-menu>.active>a:hover {
+.dropdown-menu>.active>a,.dropdown-menu>.active>a:focus,.dropdown-menu>.active>a:hover {
     color: #333;
 }
 
-.navbar .dropdown-menu .active > a:focus, .navbar .dropdown-menu .active > a:hover, .navbar.navbar-default .dropdown-menu .active > a:focus, .navbar.navbar-default .dropdown-menu .active > a:hover{
-    color:#448AFF;
+.navbar .dropdown-menu .active > a:focus,.navbar .dropdown-menu .active > a:hover,.navbar.navbar-default .dropdown-menu .active > a:focus,.navbar.navbar-default .dropdown-menu .active > a:hover {
+    color: #448AFF;
 }
 
-.panel-primary > .panel-heading + .panel-collapse > .panel-body{
+.panel-primary > .panel-heading + .panel-collapse > .panel-body {
     border-top-color: #bce8f1;
 }
 
-.thumbnail img{
-   max-height: 150px;
+.thumbnail img {
+    max-height: 150px;
 }
 
-.thumbnail:hover{
-      -webkit-box-shadow: inset 0 -1px 9px 0 rgba(0, 0, 0, 0.14), inset 0 0 10px 0 rgba(0, 0, 0, 0.12), inset 0 -1px 6px -1px rgba(0, 0, 0, 0.2);
-          box-shadow: inset 0 -1px 9px 0 rgba(0, 0, 0, 0.14), inset 0 0 10px 0 rgba(0, 0, 0, 0.12), inset 0 -1px 6px -1px rgba(0, 0, 0, 0.2);
+.thumbnail:hover {
+    -webkit-box-shadow: inset 0 -1px 9px 0 rgba(0,0,0,0.14),inset 0 0 10px 0 rgba(0,0,0,0.12),inset 0 -1px 6px -1px rgba(0,0,0,0.2);
+    box-shadow: inset 0 -1px 9px 0 rgba(0,0,0,0.14),inset 0 0 10px 0 rgba(0,0,0,0.12),inset 0 -1px 6px -1px rgba(0,0,0,0.2);
 }
 
-.thumbnail>.caption{
-    /*word-wrap: break-word*/
+.thumbnail>.caption {
+/*word-wrap: break-word*/
     overflow: hidden;
 }
+
 /*.navbar .dropdown-menu .active > a:focus, .navbar .dropdown-menu .active > a:hover, .navbar.navbar-default .dropdown-menu .active > a:focus, .navbar.navbar-default .dropdown-menu .active > a:hover {
     background-color: inherit;
     color: #333;
@@ -247,17 +265,7 @@ a, a:focus, a:hover {
     top: 4px;
 }*/
 
-@media print {
-  @page {
-    size: 330mm 427mm;
-    margin: 14mm;
-  }
-  .container {
-    width: 1170px;
-  }
-}
-
-.btn.btn-info.btn-fab, .btn.btn-info.btn-fab:focus:not(:hover){
+.btn.btn-info.btn-fab,.btn.btn-info.btn-fab:focus:not(:hover) {
     background-color: #0288d1;
     position: fixed;
     bottom: 20px;
@@ -266,5 +274,5 @@ a, a:focus, a:hover {
     height: 50px;
     min-width: 50px;
     width: 50px;
-    cursor:pointer;
+    cursor: pointer;
 }
