@@ -241,7 +241,7 @@ a,a:focus,a:hover {
 }
 
 .thumbnail img {
-    max-height: 150px;
+    max-height: 100px;
 }
 
 .thumbnail:hover {
